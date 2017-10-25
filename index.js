@@ -19,5 +19,7 @@ window.onload = function(){
         });
     });
 
-    $("#tweet-quote").on("click",function() {openURL("href","https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=" + encodeURIComponent('"'+currentQuote + '" ' + currentAuthor+'"')+'"')
+    $("#tweet-quote").on("click",function(){
+        window.open("https://twitter.com/intent/tweet?text=" + encodeURIComponent('"'+currentQuote + '" -' + currentAuthor))
     });
+}
